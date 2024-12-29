@@ -1,0 +1,31 @@
+{
+    "type": "TimeDeposit",
+    "id": "INV001",
+    "name": "1Y USD Inverse Floater",
+    "status": "ACTIVE",
+    "currency": "USD",
+    "issue_date": "2023-01-01",
+    "maturity_date": "2024-01-01",
+    "counterparty_id": "CP001",
+    "counterparty_rating": "A",
+    "booking_entity": "BANK001",
+    "trading_book": "BANKING",
+    "cost_center": "CC001",
+    "principal": 1000000.0,
+    "interest_rate": {
+        "type": "FLOATING",
+        "value": 0.05,
+        "floater_type": "INVERSE",
+        "inverse_spec": {
+            "reference_rate": "LIBOR",
+            "multiplier": -1.0,
+            "constant": 0.10,
+            "cap": 0.08,
+            "floor": 0.02
+        },
+        "reset_frequency": "QUARTERLY"
+    },
+    "payment_frequency": "QUARTERLY",
+    "day_count_convention": "ACT_360",
+    "compounding_frequency": "QUARTERLY"
+} 
