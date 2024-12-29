@@ -1,0 +1,14 @@
+{
+    "discount_curve": {
+        "1M": 0.04,
+        "3M": 0.045,
+        "6M": 0.05,
+        "1Y": 0.055
+    },
+    "reference_rates": {
+        "SOFR": 0.05
+    },
+    "volatilities": {
+        "USD": 0.2
+    }
+} 
