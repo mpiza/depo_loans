@@ -1,0 +1,37 @@
+{
+    "type": "TimeDeposit",
+    "id": "DEP003",
+    "name": "1Y USD Capped Floater",
+    "status": "ACTIVE",
+    "currency": "USD",
+    "issue_date": "2023-07-01",
+    "maturity_date": "2024-07-01",
+    "counterparty_id": "CP003",
+    "counterparty_rating": "A",
+    "booking_entity": "BANK001",
+    "trading_book": "BANKING",
+    "cost_center": "CC001",
+    "principal": 1500000.0,
+    "interest_rate": {
+        "type": "FLOATING",
+        "value": 0.05,
+        "spread": 0.015,
+        "reference_rate": "SOFR",
+        "reset_frequency": "QUARTERLY",
+        "floater_type": "STANDARD",
+        "cap": {
+            "cap_rate": 0.07,
+            "start_date": "2023-07-01",
+            "end_date": "2024-07-01"
+        },
+        "floor": {
+            "floor_rate": 0.03,
+            "start_date": "2023-07-01",
+            "end_date": "2024-07-01"
+        }
+    },
+    "payment_frequency": "QUARTERLY",
+    "day_count_convention": "ACT_360",
+    "compounding_frequency": "QUARTERLY",
+    "allow_early_withdrawal": false
+} 

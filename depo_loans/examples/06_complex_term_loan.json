@@ -1,0 +1,77 @@
+{
+    "type": "TermLoan",
+    "id": "LOAN001",
+    "name": "5Y USD Syndicated Term Loan",
+    "status": "ACTIVE",
+    "currency": "USD",
+    "issue_date": "2023-07-01",
+    "maturity_date": "2028-07-01",
+    "counterparty_id": "CP006",
+    "counterparty_rating": "BBB",
+    "booking_entity": "BANK001",
+    "trading_book": "BANKING",
+    "cost_center": "CC001",
+    "facility_amount": 10000000.0,
+    "outstanding_amount": 10000000.0,
+    "amortization_type": "SCHEDULED",
+    "interest_rate": {
+        "type": "FLOATING",
+        "value": 0.05,
+        "spread": 0.0225,
+        "reference_rate": "SOFR",
+        "reset_frequency": "QUARTERLY",
+        "floater_type": "STANDARD",
+        "floor": {
+            "floor_rate": 0.0,
+            "start_date": "2023-07-01",
+            "end_date": "2028-07-01"
+        }
+    },
+    "default_spread": 0.02,
+    "payment_frequency": "QUARTERLY",
+    "upfront_fee": 0.005,
+    "commitment_fee": 0.004,
+    "agent_fee": 0.001,
+    "participants": [
+        {
+            "participant_id": "BANK001",
+            "participation_amount": 4000000.0,
+            "participation_percentage": 0.4,
+            "transferable": true,
+            "minimum_hold_amount": 2000000.0
+        },
+        {
+            "participant_id": "BANK002",
+            "participation_amount": 3000000.0,
+            "participation_percentage": 0.3,
+            "transferable": true,
+            "minimum_hold_amount": 1500000.0
+        },
+        {
+            "participant_id": "BANK003",
+            "participation_amount": 3000000.0,
+            "participation_percentage": 0.3,
+            "transferable": true,
+            "minimum_hold_amount": 1500000.0
+        }
+    ],
+    "agent_bank": "BANK001",
+    "financial_covenants": [
+        {
+            "type": "LEVERAGE_RATIO",
+            "description": "Net Debt to EBITDA",
+            "threshold": 3.5,
+            "testing_frequency": "QUARTERLY",
+            "last_test_date": "2023-06-30",
+            "last_test_result": true
+        },
+        {
+            "type": "INTEREST_COVERAGE",
+            "description": "EBITDA to Interest Expense",
+            "threshold": 3.0,
+            "testing_frequency": "QUARTERLY",
+            "last_test_date": "2023-06-30",
+            "last_test_result": true
+        }
+    ]
+} 

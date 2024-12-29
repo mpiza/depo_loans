@@ -1,0 +1,27 @@
+{
+    "type": "TimeDeposit",
+    "id": "DEP002",
+    "name": "1Y USD Floating Rate Deposit",
+    "status": "ACTIVE",
+    "currency": "USD",
+    "issue_date": "2023-07-01",
+    "maturity_date": "2024-07-01",
+    "counterparty_id": "CP002",
+    "counterparty_rating": "AA",
+    "booking_entity": "BANK001",
+    "trading_book": "BANKING",
+    "cost_center": "CC001",
+    "principal": 2000000.0,
+    "interest_rate": {
+        "type": "FLOATING",
+        "value": 0.05,
+        "spread": 0.0125,
+        "reference_rate": "SOFR",
+        "reset_frequency": "QUARTERLY",
+        "floater_type": "STANDARD"
+    },
+    "payment_frequency": "QUARTERLY",
+    "day_count_convention": "ACT_360",
+    "compounding_frequency": "QUARTERLY",
+    "allow_early_withdrawal": false
+} 

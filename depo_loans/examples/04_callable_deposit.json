@@ -1,0 +1,37 @@
+{
+    "type": "TimeDeposit",
+    "id": "DEP004",
+    "name": "2Y USD Callable Deposit",
+    "status": "ACTIVE",
+    "currency": "USD",
+    "issue_date": "2023-07-01",
+    "maturity_date": "2025-07-01",
+    "counterparty_id": "CP004",
+    "counterparty_rating": "AA",
+    "booking_entity": "BANK001",
+    "trading_book": "BANKING",
+    "cost_center": "CC001",
+    "principal": 3000000.0,
+    "interest_rate": {
+        "type": "FIXED",
+        "value": 0.055,
+        "floater_type": "STANDARD"
+    },
+    "payment_frequency": "SEMI_ANNUAL",
+    "day_count_convention": "THIRTY_360",
+    "compounding_frequency": "SEMI_ANNUAL",
+    "allow_early_withdrawal": false,
+    "is_callable": true,
+    "call_schedule": [
+        {
+            "call_date": "2024-07-01",
+            "call_price": 1.01,
+            "notice_days": 30
+        },
+        {
+            "call_date": "2025-01-01",
+            "call_price": 1.005,
+            "notice_days": 30
+        }
+    ]
+} 
