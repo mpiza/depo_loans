@@ -4,6 +4,8 @@ import numpy as np
 from scipy.stats import norm
 from datetime import date
 from ..models.base import BaseInstrument
+from ..models.deposits import TimeDeposit
+from ..models.loans import TermLoan
 
 @dataclass
 class CreditMetrics:

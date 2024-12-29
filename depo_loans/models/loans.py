@@ -2,6 +2,7 @@ from dataclasses import dataclass
 from datetime import date
 from typing import Optional, List
 from .base import BaseInstrument, RateType, PaymentFrequency, DayCountConvention
+from .deposits import InterestRate
 
 @dataclass
 class LoanParticipant:

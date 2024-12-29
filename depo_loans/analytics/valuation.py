@@ -3,9 +3,10 @@ from typing import List, Dict
 import numpy as np
 from scipy.stats import norm
 from dateutil.relativedelta import relativedelta
-from ..models.base import BaseInstrument
-from ..models.deposits import TimeDeposit, InterestRate, RateType, PaymentFrequency, DayCountConvention
+from ..models.base import BaseInstrument, RateType, PaymentFrequency, DayCountConvention
+from ..models.deposits import TimeDeposit, InterestRate
 from ..models.loans import TermLoan
+from .day_count import DayCountCalculator
 
 class CashFlow:
     def __init__(self, payment_date: date, amount: float, payment_type: str):

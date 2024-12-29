@@ -1,7 +1,8 @@
 from datetime import date
-from typing import Dict
+from typing import Dict, List
 import numpy as np
 from dateutil.relativedelta import relativedelta
+from ..models.base import PaymentFrequency
 
 class CurveUtils:
     @staticmethod

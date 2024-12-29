@@ -2,6 +2,19 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import Optional, List
 from datetime import date
+from .base import RateType, PaymentFrequency
+
+@dataclass
+class RateCap:
+    cap_rate: float
+    start_date: Optional[date] = None
+    end_date: Optional[date] = None
+
+@dataclass
+class RateFloor:
+    floor_rate: float
+    start_date: Optional[date] = None
+    end_date: Optional[date] = None
 
 class FloaterType(Enum):
     STANDARD = "STANDARD"

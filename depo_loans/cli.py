@@ -2,8 +2,20 @@ import click
 import json
 from datetime import datetime
 from typing import Dict
+from .models.base import (
+    BaseInstrument, 
+    RateType, 
+    PaymentFrequency, 
+    DayCountConvention,
+    InstrumentStatus
+)
 from .models.deposits import TimeDeposit, InterestRate
-from .models.rate_features import RateCap, RateFloor, InverseFloaterSpec
+from .models.rate_features import (
+    RateCap, 
+    RateFloor, 
+    InverseFloaterSpec, 
+    FloaterType
+)
 from .analytics.valuation import ValuationEngine
 from .analytics.credit_risk import CreditRiskAnalytics
 
